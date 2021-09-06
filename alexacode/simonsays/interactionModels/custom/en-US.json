@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ray says",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "NumberGuessIntent",
+          "slots": [
+            {
+              "name": "colorOne",
+              "type": "AMAZON.Color"
+            },
+            {
+              "name": "colorTwo",
+              "type": "AMAZON.Color"
+            },
+            {
+              "name": "colorThree",
+              "type": "AMAZON.Color"
+            },
+            {
+              "name": "colorFour",
+              "type": "AMAZON.Color"
+            }
+          ],
+          "samples": [
+            "Is it {colorOne} {colorTwo} {colorThree} {colorFour}",
+            "Ray Says {colorOne} {colorTwo} {colorThree} {colorFour}",
+            "{colorOne} {colorTwo} {colorThree} {colorFour}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "5"
+}
